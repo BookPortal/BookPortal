@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charest="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Team Page</title>
+    <style>
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .team-member {
+            border: 1px solid #ddd;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            min-height: 150px;
+        }
+
+        .team-member .photo {
+            width: 100px;
+            height: 100px;
+            background-color: #f0f0f0;
+            margin-right: 20px;
+        }
+
+        .team-member .info {
+            flex: 1;
+        }
+
+        header {
+            padding: 10px 20px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav .left {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        header nav .right {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav .right span {
+            font-weight: normal;
+            cursor: default;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">BookPortal</div>
+            <div class="right">
+                <span>Features</span>
+                <span>Pricing</span>
+                <span>Team</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="photo"></div>
+                <div class="info">
+                    <h2>Younes Chaouni</h2>
+                    <p>Role: Web designer</p>
+                    <p>Bio: First year Software Engineering student</p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="photo"></div>
+                <div class="info">
+                    <h2>Youssouf Salah</h2>
+                    <p>Role: Web designer</p>
+                    <p>Bio: First year Software Engineering student</p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="photo"></div>
+                <div class="info">
+                    <h2>Harold Okwum</h2>
+                    <p>Role: Web designer</p>
+                    <p>Bio: First year Software Engineering student</p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="photo"></div>
+                <div class="info">
+                    <h2>Jaïme Tapa</h2>
+                    <p>Role: Web designer</p>
+                    <p>Bio: First year Software Engineering student</p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="photo"></div>
+                <div class="info">
+                    <h2>Kris-Evan N'guéssant</h2>
+                    <p>Role: Web designer</p>
+                    <p>Bio: First year Software Engineering student</p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <div class="photo"></div>
+                <div class="info">
+                    <h2>Luca Ferris</h2>
+                    <p>Role: Web designer</p>
+                    <p>Bio: First year Software Engineering student</p>
+                </div>
+            </div>
+        </div>
+
+        <h1>MEET OUR TEAM</h1>
+    </main>
+</body>
+</html>
