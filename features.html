@@ -2,13 +2,58 @@
 
 <head>
     <title>Features</title>
+    <style>
+        /* Header and navigation bar styling */
+        header {
+            padding: 10px 20px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav .left {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        header nav .right {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav .right a {
+            font-weight: normal;
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        header nav .right a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
+    
+    <header>
+        <nav>
+            <div class="left">BookPortal</div>
+            <div class="right">
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="team.html">Team</a>
+            </div>
+        </nav>
+    </header>
 
     <main>
         <section>
-            <h2>Features</h2>
             <div style="display: grid; grid-template-columns: 1fr 1fr; grid-row-gap: 60px; grid-column-gap: 40px; width: 70%; margin: auto; padding: 20px;">
                 <div style="padding: 15px;">
                     <img src="images/customer-engagement.png" width="128" height="128">
