@@ -1,1 +1,31 @@
 body {}
+
+/* FEATURES PAGE **************************/
+
+#features-page .header .nav {
+    font-family: Verdana, sans-serif;
+    color:white
+}
+
+#features-page .left {
+    color:white
+}
+
+#features-page {
+    font-family: verdana,sans-serif;
+}
+
+#features-page .h2_titles {
+    color:darkorange;
+    font-weight: bold;
+}
+
+#features-page .block2{
+    margin: 40px auto 20px auto;
+}
+
+#features-page .paragraphs {
+    background-color: orange;
+    text-align: center;
+    color: white;
+}
