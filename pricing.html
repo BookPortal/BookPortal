@@ -1,14 +1,24 @@
 <!DOCTYPE html> 
+
+<link rel="stylesheet" href="pricing.css"
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing</title>
     <style>
+        /* Define the orange color for reuse */
+        :root {
+            --orange-color: rgb(225, 140, 0);
+        }
+
         /* Header and navigation bar styling */
         header {
             padding: 10px 20px;
             border-bottom: 2px solid #ddd;
+            background-color: var(--orange-color); /* Apply orange background */
+            color: white; /* Make text white for contrast */
         }
 
         header nav {
@@ -30,7 +40,7 @@
         header nav .right a {
             font-weight: normal;
             text-decoration: none;
-            color: black;
+            color: white; /* Adjust link color to white */
             cursor: pointer;
         }
 
@@ -40,7 +50,7 @@
 
         /* Center Page Header */
         h1 {
-            color: rgb(0, 0, 0); 
+            color: black; /* Set main heading text to black */
             margin-bottom: 20px;
             margin-top: 20px;
             text-align: center;
@@ -66,19 +76,19 @@
         }
 
         .pricing-table h2 {
-            color: rgb(118, 0, 0); 
+            color: var(--orange-color); /* Apply orange to subscription headings */
             font-size: 1.5em;
             margin-bottom: 20px;
         }
 
         .pricing-table p {
             font-size: 1.2em;
-            color: #333;
+            color: #333; /* Set price text to black */
             margin-bottom: 20px;
         }
 
         .subscribe-btn {
-            background-color: rgb(118, 0, 0); 
+            background-color: var(--orange-color); 
             color: white;
             padding: 10px 20px;
             text-decoration: none;
@@ -87,7 +97,7 @@
         }
 
         .subscribe-btn:hover {
-            background-color: #d40000; 
+            background-color: #F49274; 
         }
     </style>
 </head>
