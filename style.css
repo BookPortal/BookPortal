@@ -2,11 +2,12 @@
 
 #features-page .header .nav {
     font-family: Verdana, sans-serif;
-    color:white
+    color:white;
 }
 
 #features-page .left {
-    color:white
+    color:white;
+    text-decoration:none;
 }
 
 #features-page {
