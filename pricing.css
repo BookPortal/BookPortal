@@ -1,0 +1,76 @@
+/* Navbar Styling */
+header {
+    background-color: #ff8c00; 
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+header nav .left {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white; 
+}
+
+header nav .right a {
+    font-weight: normal;
+    text-decoration: none;
+    color: white; 
+    cursor: pointer;
+}
+
+header nav .right a:hover {
+    text-decoration: underline;
+}
+
+/* Center Page Header */
+h1 {
+    color: black; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Pricing Section Styling */
+.pricing-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.pricing-table {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.pricing-table h2 {
+    color: #F49724; 
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.pricing-table p {
+    font-size: 1.2em;
+    color: black; 
+    margin-bottom: 20px;
+}
+
+/* Subscribe Button Styling */
+.subscribe-btn {
+    background-color: #F49724; 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.subscribe-btn:hover {
+    background-color: rgb(255, 140, 0); 
+}
