@@ -7,8 +7,8 @@
 header {
     padding: 10px 20px;
     border-bottom: 2px solid #ddd;
-    background-color: var(--orange-color); /* Apply orange background */
-    color: white; /* Make text white for contrast */
+    background-color: var(--orange-color);
+    color: white;
 }
 
 header nav {
@@ -31,7 +31,7 @@ header nav .right {
 header nav .right a {
     font-weight: normal;
     text-decoration: none;
-    color: white; /* Adjust link color to white */
+    color: white;
     cursor: pointer;
 }
 
@@ -41,7 +41,7 @@ header nav .right a:hover {
 
 /* Center Page Header */
 h1 {
-    color: black; /* Set main heading text to black */
+    color: black;
     margin-bottom: 20px;
     margin-top: 20px;
     text-align: center;
@@ -59,28 +59,34 @@ h1 {
 
 .pricing-table {
     background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* 3D shadow effect */
     width: 300px;
     padding: 20px;
     text-align: center;
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.pricing-table:hover {
+    transform: translateY(-5px); /* Slightly lift the box on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(0, 0, 0, 0.22); /* Increase shadow for 3D hover effect */
 }
 
 .pricing-table h2 {
-    color: var(--orange-color); /* Apply orange to subscription headings */
+    color: var(--orange-color);
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
 .pricing-table p {
     font-size: 1.2em;
-    color: #333; /* Set price text to black */
+    color: #333;
     margin-bottom: 20px;
 }
 
 /* Subscribe Button Styling */
 .subscribe-btn {
-    background-color: var(--orange-color); 
+    background-color: var(--orange-color);
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -89,5 +95,5 @@ h1 {
 }
 
 .subscribe-btn:hover {
-    background-color: #F49274; 
+    background-color: #F49274;
 }
