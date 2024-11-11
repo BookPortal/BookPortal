@@ -2,30 +2,82 @@
 
 #features-page .header .nav {
     font-family: Verdana, sans-serif;
-    color:white;
+    color: white;
 }
 
 #features-page .left a {
-    color:white;
-    text-decoration:none;
+    color: white;
+    text-decoration: none;
 }
 
 #features-page {
-    font-family: verdana,sans-serif;
+    font-family: Verdana, sans-serif;
 }
 
 #features-page .h2_titles {
-    color:darkorange;
+    color: darkorange;
     font-weight: bold;
 }
 
-#features-page .block2{
-    margin: 40px auto 20px auto;
+#features-page .block2 {
+    width: 70%;
+    margin: 120px auto 20px auto;
+    text-align: center;
+    padding: 20px;
 }
 
 #features-page .paragraphs {
     background-color: orange;
     text-align: center;
     color: white;
+    padding: 15px;
 }
 
+#features-page header {
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+    background-color: orange;
+}
+
+#features-page header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#features-page header nav .left {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#features-page header nav .right {
+    display: flex;
+    gap: 20px;
+}
+
+#features-page header nav .right a {
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#features-page header nav .right a:hover {
+    text-decoration: underline;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 60px;
+    grid-column-gap: 40px;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+
+.search-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
