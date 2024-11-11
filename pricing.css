@@ -1,20 +1,37 @@
-/* Navbar Styling */
+/* Define the orange color for reuse */
+:root {
+    --orange-color: rgb(225, 140, 0);
+}
+
+/* Header and navigation bar styling */
 header {
-    background-color: rgb(255, 140, 0); 
     padding: 10px 20px;
     border-bottom: 2px solid #ddd;
+    background-color: var(--orange-color); /* Apply orange background */
+    color: white; /* Make text white for contrast */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav .left {
     font-weight: bold;
     font-size: 1.5em;
-    color: white; 
+    color: white;
+}
+
+header nav .right {
+    display: flex;
+    gap: 20px;
 }
 
 header nav .right a {
     font-weight: normal;
     text-decoration: none;
-    color: white; 
+    color: white; /* Adjust link color to white */
     cursor: pointer;
 }
 
@@ -24,7 +41,7 @@ header nav .right a:hover {
 
 /* Center Page Header */
 h1 {
-    color: black; 
+    color: black; /* Set main heading text to black */
     margin-bottom: 20px;
     margin-top: 20px;
     text-align: center;
@@ -50,20 +67,20 @@ h1 {
 }
 
 .pricing-table h2 {
-    color: #F49724; 
+    color: var(--orange-color); /* Apply orange to subscription headings */
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
 .pricing-table p {
     font-size: 1.2em;
-    color: black; 
+    color: #333; /* Set price text to black */
     margin-bottom: 20px;
 }
 
 /* Subscribe Button Styling */
 .subscribe-btn {
-    background-color: #F49724; 
+    background-color: var(--orange-color); 
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -72,5 +89,5 @@ h1 {
 }
 
 .subscribe-btn:hover {
-    background-color: rgb(255, 140, 0); 
+    background-color: #F49274; 
 }
