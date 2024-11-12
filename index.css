@@ -1,0 +1,57 @@
+/* Make the title bar orange */
+header {
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+    background-color: orange;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .left {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+header nav .right {
+    display: flex;
+    gap: 20px;
+}
+
+header nav .right a {
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+header nav .right a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.content {
+    max-width: 600px;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
