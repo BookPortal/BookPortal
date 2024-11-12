@@ -1,112 +1,20 @@
-<!DOCTYPE html> 
-
-<link rel="stylesheet" href="pricing.css">
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing</title>
-    <style>
-        /* Define the orange color for reuse */
-        :root {
-            --orange-color: rgb(225, 140, 0);
-        }
-
-        /* Header and navigation bar styling */
-        header {
-            padding: 10px 20px;
-            border-bottom: 2px solid #ddd;
-            background-color: var(--orange-color); /* Apply orange background */
-            color: white; /* Make text white for contrast */
-        }
-
-        header nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header nav .left {
-            font-weight: bold;
-            font-size: 1.5em;
-        }
-
-        header nav .right {
-            display: flex;
-            gap: 20px;
-        }
-
-        header nav .right a {
-            font-weight: normal;
-            text-decoration: none;
-            color: white; /* Adjust link color to white */
-            cursor: pointer;
-        }
-
-        header nav .right a:hover {
-            text-decoration: underline;
-        }
-
-        /* Center Page Header */
-        h1 {
-            color: black; /* Set main heading text to black */
-            margin-bottom: 20px;
-            margin-top: 20px;
-            text-align: center;
-            font-size: 2em;
-        }
-
-        /* Pricing Section Styling */
-        .pricing-section {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-
-        .pricing-table {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .pricing-table h2 {
-            color: var(--orange-color); /* Apply orange to subscription headings */
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-
-        .pricing-table p {
-            font-size: 1.2em;
-            color: #333; /* Set price text to black */
-            margin-bottom: 20px;
-        }
-
-        .subscribe-btn {
-            background-color: var(--orange-color); 
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-        }
-
-        .subscribe-btn:hover {
-            background-color: #F49274; 
-        }
-    </style>
+    <link rel="stylesheet" href="pricing.css">
+    <script src="pricing.js" defer></script>
 </head>
 
-<body>
-    <!-- Navbar -->
+<body id="pricing-page">
     <header>
         <nav>
-            <div class="left">BookPortal</div>
+            <div class="left">
+                <a href="index.html"><img src="images/logoimage.png" width="45" height="40"></a>
+                <a href="index.html">BookPortal</a>
+            </div>
             <div class="right">
                 <a href="index.html">Home</a>
                 <a href="features.html">Features</a>
@@ -116,30 +24,34 @@
         </nav>
     </header>
 
-    <!-- Page Title -->
     <h1>Online Library Subscription Plans</h1>
 
-    <!-- Pricing Section -->
     <div class="pricing-section">
-        <!-- Weekly Subscription -->
         <div class="pricing-table">
             <h2>Weekly Subscription</h2>
-            <p>$5</p>
-            <a href="#" class="subscribe-btn">Subscribe Now</a>
+            <p>$1</p>
+            <a href="#" class="subscribe-btn" onclick="confirmSubscription('Weekly', '$1')">Subscribe Now</a>
         </div>
 
-        <!-- Monthly Subscription -->
         <div class="pricing-table">
             <h2>Monthly Subscription</h2>
-            <p>$15</p>
-            <a href="#" class="subscribe-btn">Subscribe Now</a>
+            <p>$3</p>
+            <a href="#" class="subscribe-btn" onclick="confirmSubscription('Monthly', '$3')">Subscribe Now</a>
         </div>
 
-        <!-- Yearly Subscription -->
         <div class="pricing-table">
             <h2>Yearly Subscription</h2>
-            <p>$100</p>
-            <a href="#" class="subscribe-btn">Subscribe Now</a>
+            <p>$30</p>
+            <a href="#" class="subscribe-btn" onclick="confirmSubscription('Yearly', '$30')">Subscribe Now</a>
+        </div>
+    </div>
+
+    <div id="subscriptionModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Welcome aboard! 🎉</h2>
+            <p id="subscriptionMessage"></p>
+            <p><strong>Happy Reading! 📚</strong></p>
         </div>
     </div>
 </body>

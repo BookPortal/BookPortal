@@ -1,38 +1,54 @@
-/* Navbar Styling */
-header {
-    background-color: #ff8c00; 
+/* PRICING PAGE **************************/
+
+#pricing-page header {
     padding: 10px 20px;
     border-bottom: 2px solid #ddd;
+    background-color: orange;
 }
 
-header nav .left {
+#pricing-page header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pricing-page header nav .left {
     font-weight: bold;
     font-size: 1.5em;
-    color: white; 
 }
 
-header nav .right a {
+#pricing-page header nav .left a {
+    color: black;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#pricing-page header nav .right {
+    display: flex;
+    gap: 20px;
+}
+
+#pricing-page header nav .right a {
+    color: black;
     font-weight: normal;
     text-decoration: none;
-    color: white; 
     cursor: pointer;
 }
 
-header nav .right a:hover {
-    text-decoration: underline;
+#pricing-page header nav .right a:hover {
+    text-decoration: none;
 }
 
-/* Center Page Header */
-h1 {
-    color: black; 
+#pricing-page h1 {
+    color: white;
     margin-bottom: 20px;
     margin-top: 20px;
     text-align: center;
     font-size: 2em;
 }
 
-/* Pricing Section Styling */
-.pricing-section {
+#pricing-page .pricing-section {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -40,30 +56,36 @@ h1 {
     padding: 20px;
 }
 
-.pricing-table {
+#pricing-page .pricing-table {
     background-color: #fff;
     border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 300px;
     padding: 20px;
     text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.pricing-table h2 {
-    color: #F49724; 
+#pricing-page .pricing-table:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#pricing-page .pricing-table h2 {
+    color: #000000;
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
-.pricing-table p {
+#pricing-page .pricing-table p {
     font-size: 1.2em;
-    color: black; 
+    color: black;
     margin-bottom: 20px;
 }
 
-/* Subscribe Button Styling */
-.subscribe-btn {
-    background-color: #F49724; 
+#pricing-page .subscribe-btn {
+    background-color: #F49724;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -71,6 +93,64 @@ h1 {
     display: inline-block;
 }
 
-.subscribe-btn:hover {
-    background-color: #ff8c00; 
+#pricing-page .subscribe-btn:hover {
+    background-color: rgb(255, 140, 0);
+}
+
+#pricing-page .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#pricing-page .modal-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin: 15% auto;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+#pricing-page .modal-content h2 {
+    color: #f4a42c;
+}
+
+#pricing-page .modal-content p {
+    color: #333;
+}
+
+#pricing-page .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+body {
+    background-image: url('images/background.png');
+    background-size: cover;      
+    background-repeat: no-repeat;    
+    background-attachment: fixed; 
+    background-position: center;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: -1;
 }
