@@ -8,6 +8,7 @@
 }
 
 body {
+    /* maybe add font-family: 'Cambria', serif;*/
     background-image: url('images/background.png');
     background-size: cover;      
     background-repeat: no-repeat;    

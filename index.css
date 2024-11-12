@@ -11,9 +11,11 @@ header nav {
     align-items: center;
 }
 
-header nav .left {
+header nav .left a {
     font-weight: bold;
     font-size: 1.5em;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 header nav .right {
