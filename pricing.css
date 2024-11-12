@@ -1,9 +1,7 @@
-/* Original Navbar Styling */
 header {
+    background-color: #f4a42c;
     padding: 10px 20px;
     border-bottom: 2px solid #ddd;
-    background-color: rgb(225, 140, 0); /* Apply original orange background */
-    color: white; /* Make text white for contrast */
 }
 
 header nav {
@@ -12,10 +10,11 @@ header nav {
     align-items: center;
 }
 
-header nav .left {
+header nav .left a {
     font-weight: bold;
+    text-decoration: none;
+    color: black;
     font-size: 1.5em;
-    color: white;
 }
 
 header nav .right {
@@ -26,15 +25,10 @@ header nav .right {
 header nav .right a {
     font-weight: normal;
     text-decoration: none;
-    color: white; /* Adjust link color to white */
+    color: black;
     cursor: pointer;
 }
 
-header nav .right a:hover {
-    text-decoration: underline;
-}
-
-/* Center Page Header */
 h1 {
     color: black; 
     margin-bottom: 20px;
@@ -60,23 +54,29 @@ h1 {
     padding: 20px;
     text-align: center;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth 3D transition */
+}
+
+.pricing-table:hover {
+    transform: translateY(-8px); /* Lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deepened shadow for 3D effect */
 }
 
 .pricing-table h2 {
-    color: #F49724; 
+    color: #F49724;
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
 .pricing-table p {
     font-size: 1.2em;
-    color: black; 
+    color: black;
     margin-bottom: 20px;
 }
 
 /* Subscribe Button Styling */
 .subscribe-btn {
-    background-color: #F49724; 
+    background-color: #F49724;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -85,7 +85,7 @@ h1 {
 }
 
 .subscribe-btn:hover {
-    background-color: rgb(255, 140, 0); 
+    background-color: rgb(255, 140, 0);
 }
 
 /* Modal Styling */
