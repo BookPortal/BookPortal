@@ -9,10 +9,11 @@
 </head>
 
 <body>
-    <!-- Navbar -->
     <header>
         <nav>
-            <div class="left">BookPortal</div>
+            <div class="left">
+                <a href="index.html">BookPortal</a>
+            </div>
             <div class="right">
                 <a href="index.html">Home</a>
                 <a href="features.html">Features</a>
@@ -22,26 +23,21 @@
         </nav>
     </header>
 
-    <!-- Page Title -->
     <h1>Online Library Subscription Plans</h1>
 
-    <!-- Pricing Section -->
     <div class="pricing-section">
-        <!-- Weekly Subscription -->
         <div class="pricing-table">
             <h2>Weekly Subscription</h2>
             <p>$5</p>
             <a href="#" class="subscribe-btn" onclick="confirmSubscription('Weekly', '$5')">Subscribe Now</a>
         </div>
 
-        <!-- Monthly Subscription -->
         <div class="pricing-table">
             <h2>Monthly Subscription</h2>
             <p>$15</p>
             <a href="#" class="subscribe-btn" onclick="confirmSubscription('Monthly', '$15')">Subscribe Now</a>
         </div>
 
-        <!-- Yearly Subscription -->
         <div class="pricing-table">
             <h2>Yearly Subscription</h2>
             <p>$100</p>
@@ -49,7 +45,6 @@
         </div>
     </div>
 
-    <!-- Modal for Subscription Confirmation -->
     <div id="subscriptionModal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
