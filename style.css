@@ -22,8 +22,8 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
-    z-index: -1; /* Keeps the overlay behind all content */
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: -1;
 }
 
 #features-page .h2_titles {
