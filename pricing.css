@@ -1,43 +1,54 @@
-header {
-    background-color: #f4a42c;
+/* PRICING PAGE **************************/
+
+#pricing-page header {
     padding: 10px 20px;
     border-bottom: 2px solid #ddd;
+    background-color: orange;
 }
 
-header nav {
+#pricing-page header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header nav .left a {
+#pricing-page header nav .left {
     font-weight: bold;
-    text-decoration: none;
-    color: black;
     font-size: 1.5em;
 }
 
-header nav .right {
+#pricing-page header nav .left a {
+    color: black;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#pricing-page header nav .right {
     display: flex;
     gap: 20px;
 }
 
-header nav .right a {
+#pricing-page header nav .right a {
+    color: black;
     font-weight: normal;
     text-decoration: none;
-    color: black;
     cursor: pointer;
 }
 
-h1 {
-    color: black; 
+#pricing-page header nav .right a:hover {
+    text-decoration: none;
+}
+
+#pricing-page h1 {
+    color: black;
     margin-bottom: 20px;
     margin-top: 20px;
     text-align: center;
     font-size: 2em;
 }
 
-.pricing-section {
+#pricing-page .pricing-section {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -45,7 +56,7 @@ h1 {
     padding: 20px;
 }
 
-.pricing-table {
+#pricing-page .pricing-table {
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -56,24 +67,24 @@ h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.pricing-table:hover {
+#pricing-page .pricing-table:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.pricing-table h2 {
+#pricing-page .pricing-table h2 {
     color: #000000;
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
-.pricing-table p {
+#pricing-page .pricing-table p {
     font-size: 1.2em;
     color: black;
     margin-bottom: 20px;
 }
 
-.subscribe-btn {
+#pricing-page .subscribe-btn {
     background-color: #F49724;
     color: white;
     padding: 10px 20px;
@@ -82,11 +93,11 @@ h1 {
     display: inline-block;
 }
 
-.subscribe-btn:hover {
+#pricing-page .subscribe-btn:hover {
     background-color: rgb(255, 140, 0);
 }
 
-.modal {
+#pricing-page .modal {
     display: none;
     position: fixed;
     z-index: 1000;
@@ -97,7 +108,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-content {
+#pricing-page .modal-content {
     background-color: white;
     border-radius: 10px;
     padding: 20px;
@@ -109,15 +120,15 @@ h1 {
     position: relative;
 }
 
-.modal-content h2 {
+#pricing-page .modal-content h2 {
     color: #f4a42c;
 }
 
-.modal-content p {
+#pricing-page .modal-content p {
     color: #333;
 }
 
-.close-btn {
+#pricing-page .close-btn {
     position: absolute;
     top: 10px;
     right: 20px;
