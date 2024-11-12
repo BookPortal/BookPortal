@@ -8,6 +8,8 @@
 #features-page .left a {
     color: white;
     text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #features-page {
