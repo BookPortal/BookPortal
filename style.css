@@ -1,6 +1,7 @@
 /* FEATURES PAGE **************************/
 
 #features-page .left a {
+    color: black;
     text-decoration: none;
     display: table-cell;
     vertical-align: middle;
@@ -54,6 +55,7 @@
 
 #features-page header nav .right a:hover {
     text-decoration: none;
+    color: black;
 }
 
 .feature-grid {
