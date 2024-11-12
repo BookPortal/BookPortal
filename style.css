@@ -7,6 +7,14 @@
     vertical-align: middle;
 }
 
+body {
+    background-image: url('images/background.png');
+    background-size: cover;          /* Ensures the background image covers the entire page */
+    background-repeat: no-repeat;    /* Prevents the image from repeating */
+    background-attachment: fixed;    /* Keeps the background fixed in place */
+    background-position: center;
+}
+
 #features-page .h2_titles {
     color: darkorange;
     font-weight: bold;
