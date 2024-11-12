@@ -48,6 +48,7 @@
 }
 
 #features-page header nav .right a {
+    color: black;
     font-weight: normal;
     text-decoration: none;
     cursor: pointer;
@@ -55,7 +56,6 @@
 
 #features-page header nav .right a:hover {
     text-decoration: none;
-    color: black;
 }
 
 .feature-grid {
