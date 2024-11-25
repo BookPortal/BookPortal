@@ -13,6 +13,8 @@ header nav {
 
 header nav .left a {
     font-weight: bold;
+    text-decoration: none;
+    color: black;
     font-size: 1.5em;
     display: table-cell;
     vertical-align: middle;

@@ -99,6 +99,7 @@ body::before {
     justify-content: center;
     margin-bottom: 20px;
 }
+<<<<<<< HEAD
 
 .search-options .paragraphs {
     background-color: orange;
@@ -106,3 +107,5 @@ body::before {
     text-align: center;
     padding: 15px;
 }
+=======
+>>>>>>> f9fadebfc77dbde2524bc8224d78028e66400de0
