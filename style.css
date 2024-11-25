@@ -8,7 +8,7 @@
 }
 
 body {
-    /* maybe add font-family: 'Cambria', serif;*/
+    font-family: 'Cambria', serif;
     background-image: url('images/background.png');
     background-size: cover;      
     background-repeat: no-repeat;    
@@ -108,4 +108,4 @@ body::before {
     padding: 15px;
 }
 =======
->>>>>>> f9fadebfc77dbde2524bc8224d78028e66400de0
+>>>>>>> f9fadebfc77dbde2524bc8224d78028e6640de0
